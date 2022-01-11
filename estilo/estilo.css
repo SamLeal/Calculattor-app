@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap');
+
+.principal {
+    background-color: hsl(222, 26%, 31%);
+    padding: 20px;
+    align-items: center;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.cabecalho {
+    height: 100px;
+    color: white;
+}
+
+.botao-tema {
+    height: 15px;
+    width: 70px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.tela {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 32px;
+    font-weight: 700;
+    background-color: hsl(224, 36%, 15%);
+    border-radius: 10px;
+    width: 90vw;
+    height: 80px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.texto-tela {
+    align-self: center;
+    padding-right: 20px; 
+}
+
+.teclado{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+    "botao-sete botao-oito botao-nove botao-del"
+    "botao-quatro botao-cinco botao-seis botao-soma"
+    "botao-um botao-dois botao-tres botao-menos"
+    "botao-ponto botao-zero botao-divide botao-multiplica"
+    "botao-reset botao-reset botao-igual botao-igual"
+    ;
+    gap: 13px;
+    background-color: hsl(223, 31%, 20%);
+    padding: 20px;
+    border-radius: 10px;
+}    
+
+.botao {
+    height: 60px;
+    background-color: hsl(30, 25%, 89%);
+    border-radius: 10px;
+    box-shadow: 0px 5px 0px hsl(28, 16%, 65%);
+    font-size: 32px;
+    color:hsl(221, 14%, 31%);
+    font-weight: 700;
+}
+
+.botao-resEDel {
+    color: white;
+    background-color: hsl(225, 21%, 49%);
+    box-shadow: 0px 5px 0px hsl(224, 28%, 35%);
+    font-size: 20px;
+    
+}
+
+.botao-igual {
+    background-color: hsl(6, 63%, 50%);
+    box-shadow: 0px 5px 0px hsl(6, 70%, 34%);
+    color: white;
+    font-weight: lighter;
+}
+
+.attribution{
+    color: white;
+    padding: 5vh 5px;
+}
+
+
+
+.botao-zero {
+    grid-area: botao-zero;
+}
+
+.botao-um {
+    grid-area: botao-um;
+}
+
+.botao-dois {
+    grid-area: botao-dois;  
+}
+
+.botao-tres {
+    grid-area: botao-tres;
+}
+
+.botao-quatro {
+    grid-area: botao-quatro;
+}
+
+.botao-cinco {
+    grid-area: botao-cinco;
+}
+
+.botao-seis {
+    grid-area: botao-seis;
+}
+
+.botao-sete {
+    grid-area: botao-sete;
+}
+
+.botao-oito {
+    grid-area: botao-oito;
+}
+
+.botao-nove {
+    grid-area: botao-nove;
+}
+
+.botao-ponto {
+    grid-area: botao-ponto;
+}
+
+.botao-divide {
+    grid-area: botao-divide;
+}
+
+.botao-multiplica {
+    grid-area: botao-multiplica;
+}
+
+.botao-soma {
+    grid-area: botao-soma;
+}
+
+.botao-menos {
+    grid-area: botao-menos;
+}
+
+.botao-del {
+    grid-area: botao-del;
+}
+
+.botao-igual {
+    grid-area: botao-igual;
+}
+
+.botao-reset {
+    grid-area: botao-reset;
+}
