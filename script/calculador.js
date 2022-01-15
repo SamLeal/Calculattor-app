@@ -21,7 +21,7 @@ const calcular = () => {
     }
 }
 
-const atualizarTela =  (texto) => {
+const atualizarTela = (texto) => {
     if(novoNumero){
         tela.textContent = texto;
         novoNumero = false

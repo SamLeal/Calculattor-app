@@ -3,20 +3,56 @@
 .principal {
     background-color: hsl(222, 26%, 31%);
     padding: 20px;
-    align-items: center;
     font-family: 'Red Hat Display', sans-serif;
 }
 
+.container {
+    max-width: 700px;
+    margin: auto;
+}
+
+@media screen and (min-width: 700px) {
+    .container{
+        margin-top: 50px;
+    }
+
+}
+
 .cabecalho {
-    height: 100px;
+    display: flex;
+    height: 70px;
     color: white;
+    justify-content: space-between;
+}
+
+.cabecalho-div{
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+.header-tema{
+    padding-right: 25px;
+    padding-top: 20px;
+}
+
+.header-botao{
+    font-size: 14px;
+    padding-left: 8px;
+    padding-bottom: 4px;
 }
 
 .botao-tema {
-    height: 15px;
-    width: 70px;
+    height: 20px;
+    width: 65px;
     border-radius: 10px;
     background-color: white;
+}
+
+.titulo-calc{
+    padding-top: 7px;
+    font-size: 32px;
+    font-family: Calibri;
+    font-weight: 700;
 }
 
 .tela {
@@ -26,10 +62,10 @@
     font-weight: 700;
     background-color: hsl(224, 36%, 15%);
     border-radius: 10px;
-    width: 90vw;
-    height: 80px;
+    height: 90px;
     margin-bottom: 20px;
     color: white;
+    overflow-x: hidden;
 }
 
 .texto-tela {
@@ -47,14 +83,21 @@
     "botao-ponto botao-zero botao-divide botao-multiplica"
     "botao-reset botao-reset botao-igual botao-igual"
     ;
-    gap: 13px;
+    gap: 15px;
     background-color: hsl(223, 31%, 20%);
     padding: 20px;
     border-radius: 10px;
 }    
 
+@media screen and (min-width: 700px) {
+    .teclado {
+        gap: 30px;
+        padding: 30px;
+    }
+
+}
 .botao {
-    height: 60px;
+    height: 70px;
     background-color: hsl(30, 25%, 89%);
     border-radius: 10px;
     box-shadow: 0px 5px 0px hsl(28, 16%, 65%);
