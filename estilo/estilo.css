@@ -1,9 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap');
 
 .principal {
-    background-color: hsl(222, 26%, 31%);
     padding: 20px;
     font-family: 'Red Hat Display', sans-serif;
+}
+
+.prin1 {
+    background-color: hsl(222, 26%, 31%);
+    color: white;
+}
+
+.prin2 {
+    background-color: hsl(0, 0%, 90%);
+    color: hsl(60, 10%, 19%);
+}
+
+.prin3 {
+    background-color: hsl(268, 75%, 9%);
+    color: hsl(52, 100%, 62%);
 }
 
 .container {
@@ -21,7 +35,6 @@
 .cabecalho {
     display: flex;
     height: 70px;
-    color: white;
     justify-content: space-between;
 }
 
@@ -41,11 +54,50 @@
     padding-bottom: 4px;
 }
 
+
 .botao-tema {
-    height: 20px;
+    height: 22px;
     width: 65px;
-    border-radius: 10px;
-    background-color: white;
+    border-radius: 14px;
+}
+
+.bt1{
+    background-color: hsl(223, 31%, 20%);
+}
+
+.bt2{
+    background-color: hsl(0, 5%, 81%);
+}
+
+.bt3{
+    background-color: hsl(268, 71%, 12%);
+}
+
+.botao-tema::after {
+    position: relative;
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    left: 0;
+  }
+
+.bt1::after {
+    background: hsl(6, 63%, 50%);
+    transition: 1s;
+}
+
+.bt2::after {
+    background: hsl(25, 98%, 40%);
+    left: calc(50% - 8px);
+    transition: .5s;
+}
+
+.bt3::after {
+    background: hsl(176, 100%, 44%);
+    left: calc(100% - 8px);
+    transition: .5s;
 }
 
 .titulo-calc{
@@ -59,13 +111,23 @@
     display: flex;
     justify-content: flex-end;
     font-size: 32px;
-    font-weight: 700;
-    background-color: hsl(224, 36%, 15%);
+    font-weight: 700;  
     border-radius: 10px;
     height: 90px;
     margin-bottom: 20px;
-    color: white;
     overflow-x: hidden;
+}
+
+.tela1{
+    background-color: hsl(224, 36%, 15%);
+}
+
+.tela2{
+    background-color: hsl(0, 0%, 93%);
+}
+
+.tela3{
+    background-color: hsl(268, 71%, 12%);
 }
 
 .texto-tela {
@@ -84,40 +146,98 @@
     "botao-reset botao-reset botao-igual botao-igual"
     ;
     gap: 15px;
-    background-color: hsl(223, 31%, 20%);
     padding: 20px;
     border-radius: 10px;
 }    
 
+.tecl1{
+    background-color: hsl(223, 31%, 20%);
+}
+
+.tecl2{
+    background-color: hsl(0, 5%, 81%);
+}
+
+.tecl3{
+    background-color: hsl(268, 71%, 12%);
+}
+
 @media screen and (min-width: 700px) {
+    .tela{
+        height: 120px;
+        font-size: 55px;
+    }
+
     .teclado {
         gap: 30px;
         padding: 30px;
     }
 
 }
+
 .botao {
     height: 70px;
-    background-color: hsl(30, 25%, 89%);
     border-radius: 10px;
-    box-shadow: 0px 5px 0px hsl(28, 16%, 65%);
     font-size: 32px;
-    color:hsl(221, 14%, 31%);
     font-weight: 700;
 }
 
-.botao-resEDel {
-    color: white;
+.b1 {
+    background-color: hsl(30, 25%, 89%);
+    box-shadow: 0px 5px 0px hsl(28, 16%, 65%);
+    color:hsl(221, 14%, 31%);
+}
+
+.b2 {
+    background-color: hsl(45, 7%, 89%);
+    box-shadow: 0px 5px 0px hsl(35, 11%, 61%);
+    color:hsl(221, 14%, 31%);
+}
+
+.b3 {
+    background-color: hsl(268, 47%, 21%);
+    box-shadow: 0px 5px 0px hsl(290, 70%, 36%);
+    color: hsl(52, 100%, 62%)
+}
+
+.botao-resEDel1 {
     background-color: hsl(225, 21%, 49%);
     box-shadow: 0px 5px 0px hsl(224, 28%, 35%);
     font-size: 20px;
-    
 }
 
-.botao-igual {
+.botao-resEDel2 {
+    color: white;
+    background-color: hsl(185, 42%, 37%);
+    box-shadow: 0px 5px 0px hsl(224, 28%, 35%);
+    font-size: 20px;
+}
+
+.botao-resEDel3 {
+    color: white;
+    background-color: hsl(281, 89%, 26%);
+    box-shadow: 0px 5px 0px hsl(285, 91%, 52%);
+    font-size: 20px;
+}
+
+.b-igual-1 {
     background-color: hsl(6, 63%, 50%);
     box-shadow: 0px 5px 0px hsl(6, 70%, 34%);
     color: white;
+    font-weight: lighter;
+}
+
+.b-igual-2 {
+    background-color: hsl(25, 98%, 40%);
+    box-shadow: 0px 5px 0px hsl(25, 99%, 27%);
+    color: white;
+    font-weight: lighter;
+}
+
+.b-igual-3 {
+    background-color: hsl(176, 100%, 44%);
+    box-shadow: 0px 5px 0px hsl(177, 92%, 70%);
+    color: hsl(268, 75%, 9%);
     font-weight: lighter;
 }
 
